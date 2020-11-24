@@ -12,6 +12,7 @@ dotenv.config();
         price,
         description,
         date_of_expiration,
+        image
        
     } = req.body;
    
@@ -20,6 +21,7 @@ dotenv.config();
          price,
         description,
         date_of_expiration,
+        image
     });
     const data = lodash.pick(
         newProduct,
@@ -28,6 +30,7 @@ dotenv.config();
         "price",
         "description",
         "date_of_expiration",
+        "image"
     );
    
     return res.status(201).json({

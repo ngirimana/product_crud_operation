@@ -18,7 +18,12 @@ const productSchema = new mongoose.Schema({
   date_of_expiration:{
     type: String,
     required: [ true, 'Enter Date name' ],
+  },
+  image:{
+    type:String,
+    required:true,
   }
+  
 });
 const ProductModel = mongoose.model('Product', productSchema);
 
