@@ -11,7 +11,6 @@ dotenv.config();
         name,
         price,
         description,
-        date_of_expiration,
         image
        
     } = req.body;
@@ -20,7 +19,6 @@ dotenv.config();
           name,
          price,
         description,
-        date_of_expiration,
         image
     });
     const data = lodash.pick(
@@ -29,7 +27,6 @@ dotenv.config();
         "name"  ,
         "price",
         "description",
-        "date_of_expiration",
         "image"
     );
    

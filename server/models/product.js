@@ -15,10 +15,7 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [ true, 'Enter Product Description name' ],
   },
-  date_of_expiration:{
-    type: String,
-    required: [ true, 'Enter Date name' ],
-  },
+ 
   image:{
     type:String,
     required:true,
